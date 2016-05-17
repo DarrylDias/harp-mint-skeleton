@@ -1,0 +1,18 @@
+doctype html
+html
+  != partial("../_partials/head")
+  link(rel="canonical", href="#{title}")
+  
+  body
+    != partial("../_partials/header")
+    section.main.post.non-narrow.zero-top-spacing 
+      .container
+        .content
+          .front-matter
+            .title-container
+              .page-heading #{title}
+            .meta
+              .date= date 
+          .markdown
+            != yield
+            

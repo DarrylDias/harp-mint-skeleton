@@ -1,0 +1,15 @@
+doctype html
+html
+  != partial("_partials/head")
+  body
+    section.header
+      .container
+        .content
+          a.name(href=site.url)= site.name
+          != partial("_partials/nav")
+    != partial("_partials/share")
+      section.main
+        .container
+          .content 
+            != yield          
+                

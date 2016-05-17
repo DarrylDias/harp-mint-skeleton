@@ -1,0 +1,7 @@
+.page-heading All Posts
+
+ul
+for post, slug in public.blog._data
+  li.post-item
+    .meta #{post.date}
+    a(href="/blog/#{slug}")= post.title

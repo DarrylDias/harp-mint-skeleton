@@ -1,0 +1,10 @@
+{
+  "globals": {
+    "site": {
+      "name": "Example Site",
+      "description": "Example description",
+      "tags": "example, tags, keywords",
+      "url": "https://example.com"
+    }
+  }
+}
